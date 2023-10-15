@@ -106,7 +106,7 @@ pair<pt,pt> closest_pair_of_points_rand_ints(vector<pt> P) {
 	// adjacent blocks
 	for (const auto& it : grid) {
 		auto coord = it.first;
-		for (int dx = -1; dx <= 1; ++dx) {
+		for (int dx = 0; dx <= 1; ++dx) {
 			for (int dy = -1; dy <= 1; ++dy) {
 				if (dx == 0 and dy == 0) continue;
 				pair<ll,ll> neighbour = {
